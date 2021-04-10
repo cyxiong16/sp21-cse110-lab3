@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang=”en”>
+    <head>
+        <meta charset="utf-8" />
+        <title>My Journal</title>
+        <link href="images/favicon.ico" rel="icon" />
+    </head>
+    <body>
+        <header>
+            <h1>My Journal</h1>
+            <nav>
+                <ul>
+                    <li><a href="#today-entry">Today's Entry</a></li>
+                    <li><a href="#yesterday-entry">Yesterday's Entry</a></li>
+                    <li><a href="#day-before-entry">Day Before Yesterday's Entry</a></li>
+                </ul>
+            </nav>
+            <hr />
+        </header>
+
+        <main>
+            <section class="entry">
+                <div>
+                    <h2 id="today-entry">Today's Entry</h2>
+                    <h3><em>Today was a laidback day</em></h3>
+                    <h3>Date: Today's Date</h3>
+                </div>
+                <p>I woke up a little before 1pm today and felt well rested but also tired from sleeping too much.
+                    Then I cooked <b>breakfast/lunch</b>. This is what I ate:
+                </p>
+                <ul>
+                    <li>Pork and cabbage bun</li>
+                    <li>Water spinach</li>
+                    <li>Pig ears</li>
+                    <li>Milk</li>
+                    <li>Salmon w/ eggs</li>
+                    <li>Grapes</li>
+                </ul>
+                <p>It looks like a lot, but it was only a little bit of each and it was for breakfast and lunch combined
+                    so I didn't feel too stuffed afterwards.
+                </p>
+                <p>I have quite a bit of homework I have to finish over the weekend. This is the order I will complete them in:</p>
+                <ol>
+                    <li>CSE 110 Lab 2</li>
+                    <li>MGT 181 Problem Set 1</li>
+                    <li>CSE 101 HW1</li>
+                </ol>
+                <hr />
+            </section>
+            <section class="entry">
+                <div>
+                    <h2 id="yesterday-entry">Yesterday's Entry</h2>
+                    <h3><em>Yesterday was an eventful day</em></h3>
+                    <h3>Date: Yesterday's Date</h3>
+                </div>
+                <p>Yesterday, three of my friends and I drove to CVS to get our <strong>COVID-19</strong> vaccines. Here's an image of
+                    the card:
+                </p>
+                <img src="images/vaccine.jpeg" alt="COVID-19 vaccine card" height="300">
+                <hr />
+            </section>
+            <section class="entry">
+                <div>
+                    <h2 id="day-before-entry">Day Before Yesterday's Entry</h2>
+                    <h3><em>Day Before Yesterday was a day of events that I already forgot</em></h3>
+                    <h3>Date: Day Before Yesterday's Date</h3>
+                </div>
+                <p>I can't really remember what happened on the day before yesterday but I'm sure it was a good day.</p>
+                <p>Since I can't really remember what happened, I'll link a song that I have been enjoying recently!
+                </p>
+                <p><i>Song Cry</i>: cover by TXT Yeonjun</p>
+                <audio controls>
+                    <source src="audio/song-cry.mp3">
+                </audio>
+                <p>I've also been missing my puppy, Toby, recently so here's a video of him!</p>
+                <video height="400" controls>
+                    <source src="video/toby.mp4" type="video/mp4">
+                        Your browser does not support videos.
+                </video>
+                <details>
+                    <summary>Some information on Toby!</summary>
+                    Toby is a <span>Cavalier and Poodle</span> mix. He's a little over 6 months old right now.
+                    His birthday is October 6, 2020. He was tiny when we got him (around 6 lbs), and now he's almost
+                    10 lbs!
+                </details>
+            </section>
+            <br />
+
+            <form>
+                <fieldset>
+                    <legend>Add New Entry</legend>
+                    <p>Title</p>
+                    <input type="text"/>
+                    <br />
+                    <p>Date</p>
+                    <input type="date" />
+                    <input type="checkbox" id="am"/>
+                    <label for="am">A.M.</label>
+                    <input type="checkbox" id="pm"/>
+                    <label for="pm">P.M.</label>
+                    <br />
+                    <p>Select a mood:</p>
+                    <input type="radio" id="happy">
+                    <label for="happy">Happy</label>
+                    <input type="radio" id="sad">
+                    <label for="sad">Sad</label>
+                    <input type="radio" id="other">
+                    <label for="other">Other</label>
+                    <br />
+                    <label for="weather-choice">Weather:</label>
+                    <input list="weather-choices" id="weather-choice" />
+                    <datalist id="weather-choices">
+                        <option value="Sunny">
+                        <option value="Cloudy">
+                        <option value="Rainy">
+                        <option value="Other">
+                    </datalist>
+                    <br />
+                    <p>Number of meals eaten:</p>
+                    <select>
+                        <option value="">--Please choose an option--</option>
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4+">4+</option>
+                    </select>
+                    <p>Entry Content</p>
+                    <textarea rows="15" cols="50"></textarea>
+                    <br />
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+        </main>
+
+        <footer>
+            <hr />
+            <p>&copy; 2021 Caroline Xiong</p>
+        </footer>
+    </body>
+</html>
