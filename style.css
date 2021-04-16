@@ -39,6 +39,10 @@ a :visited {
     color: rgb(151, 137, 134);
 }
 
+.entry {
+    background-color: hsl(54, 27%, 87%);
+}
+
 * {
     margin: 0;
     padding: 0;
