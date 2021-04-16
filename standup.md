@@ -4,4 +4,4 @@
 
 **Today's Goals:**
 
-**Progress made since last meething:**
+**Progress made since last meeting:**
