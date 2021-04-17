@@ -4,7 +4,7 @@ body {
     padding: 5%;
 }
 
-header {
+header, nav {
     background-color: #EE9886;
 }
 
@@ -44,6 +44,20 @@ a :visited {
     color: rgb(151, 137, 134);
 }
 
+.nav-item :active {
+    color: black;
+}
+
+/* First nav tag immediately after h1 tag */
+h1 + nav {
+    position: static;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+}
+
 .entry {
     background-color: hsl(54, 27%, 87%);
     border-style: solid;
@@ -55,7 +69,6 @@ a :visited {
 
 .entry-list-item {
     list-style-type: square;
-
 }
 
  section p {
@@ -78,6 +91,40 @@ a :visited {
      flex-direction: column;
      justify-content: center;
      flex-grow: 2;
+ }
+
+ p ~ input {
+     padding: 5px;
+ }
+
+ form {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-template-rows: 100%;
+     place-self: center;
+     background-color: aliceblue;
+ }
+
+ form > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-top: 50%;
+    max-width: 50%;
+    min-width: 0%;
+ }
+
+ fieldset.form-fieldset {
+     margin: 50px;
+     padding: 10px;
+     width: fit-content;
+     height: fit-content;
+     text-align: center;
+ }
+
+ form p {
+     padding: 10px;
  }
 
 * {
