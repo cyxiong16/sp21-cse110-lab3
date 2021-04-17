@@ -7,7 +7,13 @@
         <link rel="stylesheet" href="style.css" />
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
-
+        <style>
+            @media only screen and (max-width: 600px) {
+                body {
+                    background-color: #f8f8ff;
+                }
+            }
+        </style>
     </head>
     <body>
         <header>
@@ -32,7 +38,7 @@
                 <p>I woke up a little before 1pm today and felt well rested but also tired from sleeping too much.
                     Then I cooked <b>breakfast/lunch</b>. This is what I ate:
                 </p>
-                <ul>
+                <ul class="entry-list">
                     <li class="entry-list-item">Pork and cabbage bun</li>
                     <li class="entry-list-item">Water spinach</li>
                     <li class="entry-list-item">Pig ears</li>
@@ -44,12 +50,11 @@
                     so I didn't feel too stuffed afterwards.
                 </p>
                 <p>I have quite a bit of homework I have to finish over the weekend. This is the order I will complete them in:</p>
-                <ol>
-                    <li class="entry-list-item">CSE 110 Lab 2</li>
-                    <li class="entry-list-item">MGT 181 Problem Set 1</li>
-                    <li class="entry-list-item">CSE 101 HW1</li>
+                <ol class="entry-list">
+                    <li>CSE 110 Lab 2</li>
+                    <li>MGT 181 Problem Set 1</li>
+                    <li>CSE 101 HW1</li>
                 </ol>
-                <hr />
             </section>
             <section class="entry">
                 <div>
@@ -61,7 +66,6 @@
                     the card:
                 </p>
                 <img src="images/vaccine.jpeg" alt="COVID-19 vaccine card" height="300">
-                <hr />
             </section>
             <section class="entry">
                 <div>
@@ -70,12 +74,23 @@
                     <h3>Date: Day Before Yesterday's Date</h3>
                 </div>
                 <p>I can't really remember what happened on the day before yesterday but I'm sure it was a good day.</p>
-                <p>Since I can't really remember what happened, I'll link a song that I have been enjoying recently!
+                <p>Since I can't really remember what happened, I'll link some songs that I have been enjoying recently!
                 </p>
-                <p><i>Song Cry</i>: cover by TXT Yeonjun</p>
-                <audio controls>
-                    <source src="audio/song-cry.mp3">
-                </audio>
+                <div id="songs">
+                    <p><i>Song Cry</i>: cover by TXT Yeonjun</p>
+                    <audio controls>
+                        <source src="audio/song-cry.mp3">
+                    </audio>
+                    <p><i>Something Just Like This</i>: by The Chainsmokers</p>
+                    <audio controls>
+                        <source src="audio/something-just-like-this.mp3">
+                    </audio>
+                    <p><i>The Middle</i>: by Zedd</p>
+                    <audio controls>
+                        <source src="audio/the-middle.mp3">
+                    </audio>
+                </div>
+                
                 <p>I've also been missing my puppy, Toby, recently so here's a video of him!</p>
                 <video height="400" controls>
                     <source src="video/toby.mp4" type="video/mp4">
